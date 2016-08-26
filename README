@@ -1,0 +1,9 @@
+##
+
+http://mp.weixin.qq.com/s?__biz=MzAwODE0NDE0MA==&mid=2652773063&idx=2&sn=1db80ad8e95349e38224cf8fbf4057ef&scene=1&srcid=0805MkUS3rhRaI5qOko1WJDp#wechat_redirect
+
+被上面的文章带坑了
+
+在时速云测试自动构建及自动上传时注册构建填的master ,创建容器时也是master分支即可
+
+昨天构建成功最后一步buffering to disk出错估计是时速云问题
