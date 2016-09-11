@@ -7,3 +7,31 @@ http://mp.weixin.qq.com/s?__biz=MzAwODE0NDE0MA==&mid=2652773063&idx=2&sn=1db80ad
 在时速云测试自动构建及自动上传时注册构建填的master ,创建容器时也是master分支即可
 
 昨天构建成功最后一步buffering to disk出错估计是时速云问题
+
+
+##
+``` 
+#add nodemon for dev
+npm install -g nodemon
+
+```
+
+һµ©°ѾµÏ¹¹½¨ºÃˣ¬ÎÃ¾ͿÉÔ¹ÓÏÃµÄïÔÐһ¸ö÷
+```
+docker run -i -t --rm \
+           -p 3000:3000 \
+           -v `pwd`:/src \
+           sqldump/docker-dev:0.1
+```
+ÈÎÃ4¿´һ¿´dockerÔÐÃÁÖ·¢ÉÁʲô.
+-i »á½»»¥ģʽÏÆ¶¯ÈÆ(¶ԱÈ-d ÊÔ·ÖëʽÏ). Õ¾Íâһµ©½»»¥»Ự½á£¬ÈÆ¾ͻá³öt »áÅһ¸öudo-tty.
+--rm »áÍ³öƳý°ÆÎ¼þϵͳ.
+-p 3000:3000 »ὫÖ»ú¶˿Ú3000 ת·¢µ½ÈÆÉµĶ˿Ú000.
+?
+1
+-v `pwd`:/src
+Õ¾佫»Ὣµ±ǰµĹ¤×Ŀ¼¹Òص½Ö»úýÒǵÄîÎ¼þ)ÈÆÖµÄ/src ÀÃ. ÎÃ½«µ±ǰĿ¼×Ϊһ¸öÒڣ¬¶øʹÓDockerfileÖµÄDDÃÁ£¬ÄÑÎÃÔÎ±¾±༭ÆÖ×µÄκÎ޸Ķ¼¿ÉÔ¢¼´ÔÈÆÖ¿´µ½Á.
+
+###Reference
+* »ùocker ¿ª·¢ NodeJS ӦÓ
+* http://mp.weixin.qq.com/s?__biz=MzAwODE0NDE0MA==&mid=2652773063&idx=2&sn=1db80ad8e95349e38224cf8fbf4057ef&scene=1&srcid=0805MkUS3rhRaI5qOko1WJDp#wechat_redirect
