@@ -1,3 +1,4 @@
+
 #Docker开发环境
 
 [高质量Node.js微服务的编写和部署](http://mp.weixin.qq.com/s?__biz=MzAwODE0NDE0MA==&mid=2652773063&idx=2&sn=1db80ad8e95349e38224cf8fbf4057ef&scene=1&srcid=0805MkUS3rhRaI5qOko1WJDp#wechat_redirect)
@@ -35,6 +36,7 @@ CMD ["/bin/bash"]
 #### Start
 
 ```shell
+docker build -t winfan/node-dev .
 docker run -i -t --rm \      
       -p 3000:3000 \
        -v `pwd`:/src \
