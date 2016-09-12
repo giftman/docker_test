@@ -1,11 +1,11 @@
 'use strict';
 const express = require('express')
 
-const PORT = 8080
+const PORT = 3000
 
 const app = express()
 app.get('/',function(req,res){
-    res.send('Hello docker world auto build and release success')
+    res.send('hello Hello docker world auto build and release success')
 })
 
 app.listen(PORT)
