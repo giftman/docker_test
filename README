@@ -11,7 +11,7 @@
 ### Usage
 
 #### Dockerfile
-
+node 现在用的是6.5,直接替换为4.5.0..这些就可以
 ```shell
 FROM sameersbn/ubuntu:14.04.20160827
 MAINTAINER chufan@qq.com
