@@ -9,10 +9,14 @@
 
 昨天构建成功最后一步buffering to disk出错估计是时速云问题,隔天就好了。
 
+[github地址](https://github.com/giftman/docker_test)
+
 ### Usage
 
 #### Dockerfile
-node 现在用的是6.5,直接替换为4.5.0..这些就可以
+
+> node 现在用的是6.5,直接替换为4.5.0..这些就可以
+
 ```shell
 FROM sameersbn/ubuntu:14.04.20160827
 MAINTAINER chufan@qq.com
