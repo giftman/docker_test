@@ -1,5 +1,5 @@
 
-#Docker开发环境
+# Docker开发环境
 
 [高质量Node.js微服务的编写和部署](http://mp.weixin.qq.com/s?__biz=MzAwODE0NDE0MA==&mid=2652773063&idx=2&sn=1db80ad8e95349e38224cf8fbf4057ef&scene=1&srcid=0805MkUS3rhRaI5qOko1WJDp#wechat_redirect)
 
@@ -71,12 +71,12 @@ winfan/node-dev 是要运行的docker镜像的名称和版本 – 这跟我们�
 由于Dockerfile指定了CMD ["/bin/bash"], 容器一启动，我们就会登录到一个bash shell环境中.
 
 
-###Base Image 
+### Base Image 
 - [x] Ubuntu (fork sameersbn/ubuntu add node and nodemon)
 
 - [ ] node-argo 官方发布
 - [ ] apline publish
 
-###Reference
+### Reference
 * 基于 Docker 开发 NodeJS 应用
 * [高质量Node.js微服务的编写和部署](http://mp.weixin.qq.com/s?__biz=MzAwODE0NDE0MA==&mid=2652773063&idx=2&sn=1db80ad8e95349e38224cf8fbf4057ef&scene=1&srcid=0805MkUS3rhRaI5qOko1WJDp#wechat_redirect)
